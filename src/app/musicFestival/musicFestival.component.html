@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body"  >
+        <div class="row" >
+            
+            <ul>
+                <li *ngFor="let record of recordLabelList">Record Label - {{(record.name)? record.name : 'No-data'}} 
+                    <ul *ngFor="let band of record.bands">   
+                        <li>Band - {{(band.name)? band.name : 'No-data'}}</li>
+                        <ul>
+                            <li *ngIf='band.musicFestivalName'>{{band.musicFestivalName}} Festival</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+</div>
