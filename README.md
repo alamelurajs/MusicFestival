@@ -3,3 +3,6 @@ To run
 2. npm start
 
 ** See OutputScreenshot.jpg to see the output.**
+
+by
+Alamelu Raj
